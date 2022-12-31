@@ -1,0 +1,11 @@
+services:
+    mssql:
+        image: "mcr.microsoft.com/azure-sql-edge:latest"
+        ports: 
+            - "1433:1433"
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=Secret1234
+        user: root
+        volumes:
+            - "./data/drive:/var/opt/mssql/data"

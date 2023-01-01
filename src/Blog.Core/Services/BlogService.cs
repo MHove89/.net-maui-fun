@@ -1,6 +1,5 @@
 ﻿using Blog.Core.Models;
 using System.Net.Http.Json;
-using System.Reflection.PortableExecutable;
 
 namespace Blog.Core.Services
 {

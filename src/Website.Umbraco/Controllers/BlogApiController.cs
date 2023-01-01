@@ -1,10 +1,7 @@
 ﻿using Blog.Core.Models;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using System.Text.Json;
 using Umbraco.Cms.Core;
-using Umbraco.Cms.Core.Models.Blocks;
-using Umbraco.Cms.Core.Models.PublishedContent;
 using Umbraco.Cms.Web.Common.Controllers;
 
 namespace Website.Umbraco.Controllers
@@ -47,7 +44,6 @@ namespace Website.Umbraco.Controllers
                 }
             }
 
-
             return new BlogPostsResponse()
             {
                 BlogPosts = listOfBlogPosts,
@@ -56,6 +52,4 @@ namespace Website.Umbraco.Controllers
         }
 
     }
-
-
 }
